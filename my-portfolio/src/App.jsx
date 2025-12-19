@@ -516,7 +516,7 @@ function App() {
             </a>
 
             {/* Botón 2: LinkedIn */}
-            <a href="mailto:leoflrs73@gmail.com?subject=Contacto&body=Hola,%20quiero%20más%20información" target="_blank" className="btn btn-accent">
+            <a href="https://www.linkedin.com/in/leonel-d-l-cruz-flores/" target="_blank" className="btn btn-accent">
               <img
                 src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"
                 alt="LinkedIn"
