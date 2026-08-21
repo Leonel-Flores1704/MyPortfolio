@@ -4,16 +4,82 @@ import educationImage from './assets/images/ImagenUni.png';
 import imageWeb from './assets/images/ImageWeb.png';
 import imageDataAnalysis from './assets/images/AnalisisDatos4.png';
 import imageWebMR from './assets/images/imageWebmy.png';
+import imageWebVentas from './assets/images/Ecomerce.png';
+import imageModeloPrediccion from './assets/images/ModeloPrediccion.png';
 import imgchat from './assets/images/chatbotIMG.jpg';
 import imageSoftwareEngineering from './assets/images/imagenProgr.png';
 import ImageJuego from './assets/images/imagenJuego.png';
 /* --- IMPORTS DE  CERTIFICACIONES --- */
-import certCloudArch from './assets/badges/aws-academy-graduate-cloud-architecting-training-ba.png';
-import certCloudFound from './assets/badges/aws-academy-graduate-cloud-foundations-training-bad.png';
-import certDataEng from './assets/badges/aws-academy-graduate-data-engineering-training-badg.png';
-import certNLP from './assets/badges/aws-academy-graduate-machine-learning-for-natural-l.png';
-import certMLFound from './assets/badges/aws-academy-graduate-machine-learning-foundations-t.png';
+import certCloudArch from './assets/certifications/aws/aws-academy-graduate-cloud-architecting-training-ba.png';
+import certCloudFound from './assets/certifications/aws/aws-academy-graduate-cloud-foundations-training-bad.png';
+import certDataEng from './assets/certifications/aws/aws-academy-graduate-data-engineering-training-badg.png';
+import certNLP from './assets/certifications/aws/aws-academy-graduate-machine-learning-for-natural-l.png';
+import certMLFound from './assets/certifications/aws/aws-academy-graduate-machine-learning-foundations-t.png';
+import certAIFoundations from './assets/certifications/sas/ai-foundations-knowledge-badge.png';
+import certGenAISas from './assets/certifications/sas/generative-ai-using-sas.png';
+import certDataScienceStats from './assets/certifications/sas/introduction-to-data-science-statistical-methods.png';
+import certResponsibleAI from './assets/certifications/sas/responsible-innovation-and-trustworthy-ai.png';
 import cvFile from './assets/cv/Leonel_flores_CV.pdf';
+
+const awsCertifications = [
+  {
+    title: 'AWS Academy Cloud Architecting',
+    issuer: 'AWS Academy',
+    image: certCloudArch,
+    url: 'https://www.credly.com/org/amazon-web-services/badge/aws-academy-graduate-cloud-architecting-training-ba',
+  },
+  {
+    title: 'AWS Academy Cloud Foundations',
+    issuer: 'AWS Academy',
+    image: certCloudFound,
+    url: 'https://www.credly.com/org/amazon-web-services/badge/aws-academy-graduate-cloud-foundations-training-bad',
+  },
+  {
+    title: 'AWS Academy Data Engineering',
+    issuer: 'AWS Academy',
+    image: certDataEng,
+    url: 'https://www.credly.com/org/amazon-web-services/badge/aws-academy-graduate-data-engineering-training-badg',
+  },
+  {
+    title: 'AWS Academy Machine Learning for NLP',
+    issuer: 'AWS Academy',
+    image: certNLP,
+    url: 'https://www.credly.com/org/amazon-web-services/badge/aws-academy-graduate-machine-learning-for-natural-l',
+  },
+  {
+    title: 'AWS Academy Machine Learning Foundations',
+    issuer: 'AWS Academy',
+    image: certMLFound,
+    url: 'https://www.credly.com/org/amazon-web-services/badge/aws-academy-graduate-machine-learning-foundations-t',
+  },
+];
+
+const sasCertifications = [
+  {
+    title: 'AI Foundations Knowledge Badge',
+    issuer: 'SAS',
+    image: certAIFoundations,
+    url: 'https://www.credly.com/org/sas/badge/ai-foundations-knowledge-badge',
+  },
+  {
+    title: 'Generative AI Using SAS',
+    issuer: 'SAS',
+    image: certGenAISas,
+    url: 'https://www.credly.com/org/sas/badge/generative-ai-using-sas',
+  },
+  {
+    title: 'Introduction to Data Science Statistical Methods',
+    issuer: 'SAS',
+    image: certDataScienceStats,
+    url: 'https://www.credly.com/org/sas/badge/introduction-to-data-science-statistical-methods',
+  },
+  {
+    title: 'Responsible Innovation and Trustworthy AI',
+    issuer: 'SAS',
+    image: certResponsibleAI,
+    url: 'https://www.credly.com/org/sas/badge/responsible-innovation-and-trustworthy-ai',
+  },
+];
 
 
 function App() {
@@ -126,12 +192,6 @@ function App() {
             </div>
           </div>
 
-          <div className="about-image-placeholder">
-            <div className="placeholder-box">
-              <span>[ ESPACIO PARA FOTO ]</span>
-            </div>
-          </div>
-
         </div>
       </section>
 
@@ -153,6 +213,10 @@ function App() {
               <div className="tech-card">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" />
                 <span>JavaScript</span>
+              </div>
+              <div className="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+                <span>TypeScript</span>
               </div>
               <div className="tech-card">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
@@ -180,8 +244,16 @@ function App() {
                 <span>React</span>
               </div>
               <div className="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+                <span>Node.js</span>
+              </div>
+              <div className="tech-card">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" />
                 <span>Laravel</span>
+              </div>
+              <div className="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" />
+                <span>Tailwind</span>
               </div>
               <div className="tech-card">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
@@ -207,6 +279,30 @@ function App() {
               <div className="tech-card">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender" />
                 <span>Blender</span>
+              </div>
+              <div className="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" />
+                <span>TensorFlow</span>
+              </div>
+              <div className="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" />
+                <span>Kotlin</span>
+              </div>
+              <div className="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" />
+                <span>Android Studio</span>
+              </div>
+              <div className="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetpackcompose/jetpackcompose-original.svg" alt="Jetpack Compose" />
+                <span>Jetpack Compose</span>
+              </div>
+              <div className="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg" alt="Playwright" />
+                <span>Playwright</span>
+              </div>
+              <div className="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+                <span>Linux</span>
               </div>
 
             </div>
@@ -241,13 +337,14 @@ function App() {
                 <div className="knowledge-text">
                   <h5 className="knowledge-title">Bases de Datos & Análisis</h5>
                   <p className="knowledge-description">
-                    Estructuración, diseño y creación de base de datos así como análisis de la información y extracción de valor mediante análisis de datos.
+                    Diseño, estructuración y procesamiento de información para obtener valor mediante análisis de datos.
                   </p>
                   <ul className="knowledge-list">
-                    <li>Diseño y Normalización de BD</li>
-                    <li>Modelado Entidad–Relación</li>
-                    <li>Análisis de datos con Python</li>
+                    <li>Diseño de esquemas Entidad-Relación</li>
+                    <li>Normalización de bases de datos</li>
                     <li>Procesamiento estadístico</li>
+                    <li>Preparación y limpieza de datos</li>
+                    <li>Análisis para toma de decisiones</li>
                   </ul>
                 </div>
                 <div className="knowledge-image">
@@ -262,21 +359,45 @@ function App() {
               <div className="knowledge-block">
                 {/* Texto */}
                 <div className="knowledge-text">
-                  <h5 className="knowledge-title"> Programación</h5>
+                  <h5 className="knowledge-title">Ingeniería de Software y Arquitectura</h5>
                   <p className="knowledge-description">
-                    Aplicación de buenas prácticas, patrones de diseño y metodologías para construir software.
+                    Aplicación de principios de ingeniería para diseñar, documentar y construir software mantenible.
                   </p>
                   <ul className="knowledge-list">
                     <li>Programación Orientada a Objetos (POO)</li>
-                    <li>Control de Versiones (Git)</li>
-                    <li>Diseño de Interfaces (UI/UX)</li>
-                    <li>Metodologías Ágile(Scrum)</li>
+                    <li>Programación concurrente</li>
+                    <li>Documentación técnica</li>
+                    <li>Ingeniería de requerimientos</li>
+                    <li>Metodologías ágiles</li>
                   </ul>
                 </div>
                 <div className="knowledge-image">
                   <img
                     src={imageSoftwareEngineering}
                     alt="Trabajo en equipo e Ingeniería"
+                    className="knowledge-img-styled"
+                  />
+                </div>
+              </div>
+
+              <div className="knowledge-block reversed">
+                <div className="knowledge-text">
+                  <h5 className="knowledge-title">Arquitectura, Calidad e Infraestructura</h5>
+                  <p className="knowledge-description">
+                    Diseño de soluciones robustas con enfoque en calidad, pruebas, observabilidad e infraestructura base.
+                  </p>
+                  <ul className="knowledge-list">
+                    <li>Diseño de arquitectura de software</li>
+                    <li>Manejo avanzado de errores</li>
+                    <li>Debugging y observabilidad</li>
+                    <li>Automatización y pruebas con Playwright</li>
+                    <li>Administración básica en Linux</li>
+                  </ul>
+                </div>
+                <div className="knowledge-image">
+                  <img
+                    src={imageWeb}
+                    alt="Arquitectura, calidad e infraestructura"
                     className="knowledge-img-styled"
                   />
                 </div>
@@ -321,7 +442,53 @@ function App() {
               </div>
             </div>
 
-            {/* PROYECTO 2: CHATBOT WHATSAPP */}
+            {/* PROYECTO 2: WEBVENTAS */}
+            <div className="project-card">
+              <div className="project-img-container">
+                <img src={imageWebVentas} alt="WebVentas e-commerce" />
+              </div>
+              <div className="project-content">
+                <h4>WebVentas E-commerce</h4>
+                <p>
+                  Tienda web para la venta de ropa y productos, con catálogo, carrito,
+                  usuarios, generación de ventas, tickets, pagos en línea con Conekta
+                  y base preparada para facturación y reportes.
+                </p>
+                <div className="project-tags">
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                  <span>PDO</span>
+                  <span>JavaScript</span>
+                  <span>Conekta</span>
+                  <span>FastAPI</span>
+                </div>
+              </div>
+            </div>
+
+            {/* PROYECTO 3: MODELO PREDICCION */}
+            <div className="project-card">
+              <div className="project-img-container">
+                <img src={imageModeloPrediccion} alt="Modelo de predicción de precios Apple" />
+              </div>
+              <div className="project-content">
+                <h4>ModeloPredicción Apple Pricing</h4>
+                <p>
+                  Aplicación web que estima precios en USD de productos Apple mediante
+                  una red neuronal MLP entrenada con TensorFlow/Keras, API REST en FastAPI
+                  y frontend en Next.js para capturar datos y mostrar predicciones.
+                </p>
+                <div className="project-tags">
+                  <span>Next.js</span>
+                  <span>TypeScript</span>
+                  <span>FastAPI</span>
+                  <span>TensorFlow</span>
+                  <span>Keras</span>
+                  <span>Scikit-learn</span>
+                </div>
+              </div>
+            </div>
+
+            {/* PROYECTO 4: CHATBOT WHATSAPP */}
             <div className="project-card">
               <div className="project-img-container">
                 <img src={imgchat} alt="Chatbot WhatsApp" />
@@ -342,7 +509,7 @@ function App() {
               </div>
             </div>
 
-            {/* PROYECTO 3: VIDEOJUEGO GODOT */}
+            {/* PROYECTO 5: VIDEOJUEGO GODOT */}
             <div className="project-card">
               <div className="project-img-container">
                 <img src={ImageJuego} alt="Juego Godot" />
@@ -432,28 +599,45 @@ function App() {
           {/* GRID DE AWS */}
           <div className="certs-grid-aws">
             {/* --- AWS --- */}
-            <div className="aws-card">
-              <div className="aws-card-top"><img src={certCloudArch} alt="Badge" className="aws-badge-img" /><span className="aws-badge-label">Badge de Certificación</span></div>
-              <div className="aws-card-bottom"><div className="aws-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div className="aws-card-text"><h4>AWS Academy Cloud Architecting</h4><p>AWS Academy</p></div></div>
-            </div>
-            <div className="aws-card">
-              <div className="aws-card-top"><img src={certCloudFound} alt="Badge" className="aws-badge-img" /><span className="aws-badge-label">Badge de Certificación</span></div>
-              <div className="aws-card-bottom"><div className="aws-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div className="aws-card-text"><h4>AWS Academy Cloud Foundations</h4><p>AWS Academy</p></div></div>
-            </div>
-            <div className="aws-card">
-              <div className="aws-card-top"><img src={certDataEng} alt="Badge" className="aws-badge-img" /><span className="aws-badge-label">Badge de Certificación</span></div>
-              <div className="aws-card-bottom"><div className="aws-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div className="aws-card-text"><h4>AWS Academy Data Engineering</h4><p>AWS Academy</p></div></div>
-            </div>
-            <div className="aws-card">
-              <div className="aws-card-top"><img src={certNLP} alt="Badge" className="aws-badge-img" /><span className="aws-badge-label">Badge de Certificación</span></div>
-              <div className="aws-card-bottom"><div className="aws-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div className="aws-card-text"><h4>AWS Academy Machine Learning for NLP</h4><p>AWS Academy</p></div></div>
-            </div>
-            <div className="aws-card">
-              <div className="aws-card-top"><img src={certMLFound} alt="Badge" className="aws-badge-img" /><span className="aws-badge-label">Badge de Certificación</span></div>
-              <div className="aws-card-bottom"><div className="aws-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div className="aws-card-text"><h4>AWS Academy Machine Learning Foundations</h4><p>AWS Academy</p></div></div>
-            </div>
+            {awsCertifications.map((cert) => (
+              <a key={cert.title} href={cert.url} className="aws-card" target="_blank" rel="noreferrer">
+                <div className="aws-card-top"><img src={cert.image} alt={cert.title} className="aws-badge-img" /><span className="aws-badge-label">Badge de Certificación</span></div>
+                <div className="aws-card-bottom"><div className="aws-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#FF9900" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></div><div className="aws-card-text"><h4>{cert.title}</h4><p>{cert.issuer}</p></div></div>
+              </a>
+            ))}
           </div>
 
+          <div style={{ height: '50px' }}></div>
+
+          {/* ==================== BLOQUE SAS ==================== */}
+
+          {/* ENCABEZADO SAS */}
+          <div className="cert-simple-header">
+            <h4>SAS Academy</h4>
+          </div>
+
+          {/* GRID DE SAS */}
+          <div className="certs-grid-sas">
+            {sasCertifications.map((cert) => (
+              <a key={cert.title} href={cert.url} className="sas-card" target="_blank" rel="noreferrer">
+                <div className="sas-card-top">
+                  <img src={cert.image} alt={cert.title} className="sas-badge-img" />
+                  <span className="sas-badge-label">Badge de Certificación</span>
+                </div>
+                <div className="sas-card-bottom">
+                  <div className="sas-check-icon">
+                    <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div className="sas-card-text">
+                    <h4>{cert.title}</h4>
+                    <p>{cert.issuer}</p>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
 
           {/* ==================== BLOQUE CISCO ==================== */}
 
