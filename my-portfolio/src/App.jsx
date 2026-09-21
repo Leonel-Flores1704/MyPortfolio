@@ -19,6 +19,7 @@ import certAIFoundations from './assets/certifications/sas/ai-foundations-knowle
 import certGenAISas from './assets/certifications/sas/generative-ai-using-sas.png';
 import certDataScienceStats from './assets/certifications/sas/introduction-to-data-science-statistical-methods.png';
 import certResponsibleAI from './assets/certifications/sas/responsible-innovation-and-trustworthy-ai.png';
+import certModernDataScience from './assets/certifications/sas/modern-data-science-with-sas-viya-workbench-unified.png';
 import cvFile from './assets/cv/Leonel_flores_CV.pdf';
 
 const awsCertifications = [
@@ -78,6 +79,12 @@ const sasCertifications = [
     issuer: 'SAS',
     image: certResponsibleAI,
     url: 'https://www.credly.com/org/sas/badge/responsible-innovation-and-trustworthy-ai',
+  },
+  {
+    title: 'Modern Data Science with SAS Viya Workbench',
+    issuer: 'SAS',
+    image: certModernDataScience,
+    url: 'https://www.credly.com/org/sas/badge/modern-data-science-with-sas-viya-workbench-unified',
   },
 ];
 
