@@ -20,7 +20,7 @@ import certGenAISas from './assets/certifications/sas/generative-ai-using-sas.pn
 import certDataScienceStats from './assets/certifications/sas/introduction-to-data-science-statistical-methods.png';
 import certResponsibleAI from './assets/certifications/sas/responsible-innovation-and-trustworthy-ai.png';
 import certModernDataScience from './assets/certifications/sas/modern-data-science-with-sas-viya-workbench-unified.png';
-import cvFile from './assets/cv/Leonel_flores_CV.pdf';
+import cvFile from './assets/cv/Leonel_dela_Cruz.pdf';
 
 const awsCertifications = [
   {
